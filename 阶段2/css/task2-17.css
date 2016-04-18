@@ -1,0 +1,90 @@
+label{
+    cursor:pointer;
+    position: relative;
+    display: inline-block;/*每个元素按内联排，但是各元素内部按block排*/
+    width: 50px;
+    height: 50px;
+}
+label span {
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #16324a;
+    border-radius: 50%;
+}
+label input {
+    position: absolute;
+    opacity: 0;/*不透明级别，0为透明*/
+}
+*{
+    font-family:"Microsoft YaHei";
+}
+fieldset{
+    width: 1200px;
+    margin:0 auto;
+    border-radius: 20px;
+}
+.grade{
+    float: left;
+    margin-left: 100px;
+}
+.select{
+    float: left;
+    margin-left: 100px;
+}
+#city-select{
+    cursor:pointer;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    outline:none;
+    width: 110px;
+    line-height: 25px;
+    margin-top: 10px;
+    font-size: .75rem;
+    letter-spacing: 10px;
+    padding: 0 30px;
+}
+#aqi-chart-wrap {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin:50px auto;
+    box-shadow:  0px 0px 5px #999999;
+    border-radius: 20px;
+    overflow: hidden;/*??*/
+}
+.selected {
+    background-color: #16324a;
+    color: white;
+}
+.aqi-bar{
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+.aqi-hint {
+    position: absolute;
+    display: none;
+    width: 120px;
+    border: 1px solid #16324a;
+    background-color: white;
+    z-index: 999;/*??*/
+    font-size: .75rem;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #dddddd;
+    opacity: .8;
+}
+.show + div {
+    display: block;
+}
+.title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 10px;
+}
