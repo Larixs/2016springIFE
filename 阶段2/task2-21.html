@@ -1,0 +1,43 @@
+<!doctype>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>IFE task2-21</title>
+    <style type="text/css">
+        .cell{
+            display:inline-block;
+            box-sizing: border-box;
+            cursor:pointer;
+            background-color: rgba(45, 45, 67, 0.73);
+            color: azure;
+            height: 40px;
+            min-width:40px;
+            padding:10px 15px 0 15px;
+            font-size: 20px;
+            margin:10px 0 0 10px;
+            border-radius: 10px;
+        }
+        .showCells{
+            min-height: 50px;
+        }
+        .clear{
+            margin-left:10px;
+        }
+    </style>
+</head>
+<body>
+<div id="tag">
+    <span>Tag:</span><input id="tagIn" type="text" placeholder="请输入balabalabala" />
+	<button id="tagClear" class="clear">清除</button>
+</div>
+<div class="showCells" id="tagShow"></div>
+<div id="hobby">
+    <textarea id="hobbyIn" placeholder="请输入balabalabala" rows=4 ></textarea>
+    <div>
+        <button id="hobbyConfirm">确认兴趣爱好</button><button class="clear" id="hobbyClear">清除</button></div>
+    <div class="showCells" id="hobbyShow"></div>
+</div>
+<script src="js/task2-21.js"></script>
+</body>
+</html>
+
