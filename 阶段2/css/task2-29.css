@@ -1,0 +1,38 @@
+/*stylesheet for task2-29.html*/
+body{
+    font-family: "Microsoft YaHei";
+}
+div{
+   position: relative;
+    text-align: center;
+
+}
+#name{
+    outline: inherit;
+    padding: 80px;
+    min-width: 300px;
+}
+label>span{
+    font-weight: bold;
+    font-size: 15px;
+}
+label>input{
+    margin-left: 20px;
+    height: 30px;
+    border-radius:3px;
+}
+.tip{
+    color: gray;
+    font-size:10px;
+    line-height: 50%;
+}
+button{
+    height: 30px;
+    width: 60px;
+    margin-left: 30px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius:3px;
+    background-color: #3674c6;
+}
