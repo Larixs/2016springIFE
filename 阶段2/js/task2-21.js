@@ -12,7 +12,7 @@
                 return event.target || event.srcElement;}
         };
         var target=null;
-        Function.prototype.bind=function(obj){
+        Function.prototype.bind=function(obj){//用于绑定事件中的this对象转换
             var _this=this;
             return function(){
                 _this.apply(obj,arguments);
@@ -29,11 +29,20 @@
         }
         TextIn.prototype={
             constructor:TextIn,
-            render:function(){
-                var innerHTML="";
+            render:function(){//渲染并绑定mouseenter和mouseleave事件
+                var fragment=document.createDocumentFragment();
+                this.show.innerHTML="";
                 for(var i=0;i<this.array.length;i++)
-                    innerHTML+="<div class='cell' title='"+this.array[i]+"' id='"+(i+this.areaNumber)+"'>"+this.array[i]+"</div>";
-                this.show.innerHTML=innerHTML;
+                {
+                    var tmp=document.createElement("div");
+                    tmp.className="cell";
+                    tmp.title=tmp.innerHTML=this.array[i];
+                    tmp.id=i+this.areaNumber;
+                    fragment.appendChild(tmp);
+                    EventUtil.addHandler( tmp,'mouseenter',this.DeleteTip);
+                    EventUtil.addHandler( tmp,'mouseleave',this.RemoveDeleteTip);
+                }
+                this.show.appendChild(fragment);
                 this.in.value="";
             },
           addToArray:function(array){
@@ -57,6 +66,14 @@
                 });
               EventUtil.addHandler( this.show,'click',this.DeleteNumber.bind(this));
             },
+            DeleteTip:function(){
+                this.innerHTML="<span>点击删除</span>"+this.innerHTML;
+                this.style.backgroundColor="black";
+            },
+            RemoveDeleteTip:function(){
+                this.removeChild(this.firstChild);
+                this.style.backgroundColor="rgba(45, 45, 67, 0.73)";
+            },
            DeleteNumber:function() {
                 if(target.id<(11+this.areaNumber)&&target.id>(this.areaNumber-1))
                 {this.array.splice((target.id-this.areaNumber),1);
@@ -74,7 +91,7 @@
             Hobby.prototype=new TextIn();//方法继承
             Hobby.constructor=Hobby;
 
-            Hobby.prototype.getContent=function (){
+            Hobby.prototype.getContent=function (){//每个框对输入的要求不一样，所以没有添加到textIn原型里而是分别添加
 
                 var tmp=this.in.value.trim();
                 var reg=/[0-9a-zA-Z\u4E00-\u9FA5]+/g;
@@ -100,18 +117,15 @@
             Tag.constructor=Tag;
 
             Tag.prototype.getContent=function (){
-
-                var tmp=this.in.value.trim();
-                var reg=/[0-9a-zA-Z\u4E00-\u9FA5]+/g;
-                var match=null;
-                do {
-                    match = reg.exec(tmp);
+                var tmp=this.in.value;
+                var reg=/[0-9a-zA-Z\u4E00-\u9FA5]+\s/m;
+                var match = reg.exec(tmp);
                     if (match) this.addToArray(match[0]);
-                }while(match)
             };
             Tag.prototype.tagInit=function(){
                 this.init();
-                EventUtil.addHandler(this.in,'input',test);
+                EventUtil.addHandler(this.in,'input',this.getContent.bind(this));//ie以外的浏览器，不用onchange
+                EventUtil.addHandler(this.in,'propertychange',this.getContent.bind(this));//兼容ie
             };
 
             var tag=new Tag("tag",0);
@@ -121,7 +135,3 @@
         createTag();
     }
 )();
-function test()
-{
-    alert("yes");
-}
