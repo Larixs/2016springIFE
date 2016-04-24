@@ -1,0 +1,40 @@
+/*stylesheet for task2-29.html*/
+body{
+    font-family: "Microsoft YaHei";
+}
+fieldset{
+    border: none;
+}
+div{
+   position: relative;
+    text-align: center;
+}
+
+label>span{
+    font-weight: bold;
+    font-size: 15px;
+}
+tr{
+}
+table input,p{
+    width:400px;
+    margin-left: 20px;
+    border-radius:3px;
+}
+.tip{
+    color: gray;
+    font-size:10px;
+    line-height: 50%;
+}
+.submit{
+    text-align: right;
+}
+.submit button{
+    height: 30px;
+    width: 60px;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius:3px;
+    background-color: #3674c6;
+}
