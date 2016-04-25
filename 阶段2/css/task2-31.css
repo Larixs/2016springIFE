@@ -1,0 +1,7 @@
+/*stylesheet for task2-31.html*/
+#schoolStatus>div{
+    padding-top: 15px;
+}
+#schoolStatus select{
+    margin-left: 10px;
+}
