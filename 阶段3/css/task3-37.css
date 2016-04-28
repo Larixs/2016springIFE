@@ -1,0 +1,49 @@
+/*stylesheet for task3-37.html*/
+body{
+    background-color: #5d5d5d;
+    color: #e4fffa;
+    font-family: "Microsoft YaHei";
+    min-width: 800px;
+    position: relative;
+}
+header{
+    position: relative;
+    text-align: right;
+}
+header span{
+    position: relative;
+    right: 180px;
+    border: 2px solid  #f4ffff;
+    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+    cursor: pointer;
+}
+h1,h2{
+    text-align: center;
+
+}
+article{
+    margin: 20px 160px 20px 160px;
+    padding: 20px 40px 20px 40px;
+    border: 3px solid #f4ffff;
+    border-radius: 10px;
+}
+#logIn{
+    position: fixed;left: 0;
+    top:0;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    z-index: 3;
+    color: #242020;
+}
+#logIn label{
+    display: block;
+}
+#logIn label span{
+    display: inline-block;
+    min-width: 100px;
+}
+#logIn .formBody{
+    text-align: center;
+}
