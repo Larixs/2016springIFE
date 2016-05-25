@@ -1,0 +1,14 @@
+.sortTable{
+	width: 100%;
+	border-collapse: collapse;
+	color:#000;
+	border:1px solid black;
+	text-align: center;
+}
+.sortTableHead{
+	color:#fff;
+	background-color: #666;
+}
+.sortup,.sortdown{
+	font-size: 60%;
+}
