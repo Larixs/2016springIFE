@@ -1,5 +1,8 @@
+body{
+	margin: 0;
+}
 .sortTable{
-	width: 100%;
+	width: 50%;
 	border-collapse: collapse;
 	color:#000;
 	border:1px solid black;
