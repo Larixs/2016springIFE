@@ -44,6 +44,15 @@
             this.$calButton.click(function () {
                 $(this).next().toggle();
             });
+
+            for(var i=0;i<7;i++){
+                var $weekTitleCell=$('<div class="weekTitleCell">'+this.days[i]+'</div>')
+                this.$weekTitle.append($weekTitleCell);
+                if(i==0||i==6)
+                {
+                    $weekTitleCell.addClass("weekends");
+                }
+            }
             var that=this;
             function back(){
                 if(that.time.mon==0){
@@ -84,14 +93,6 @@
             var fDay = firstDay.getDay();
             this.$timeTitle.text(year+'年'+(mon+1)+'月');
 
-            for(var i=0;i<7;i++){
-                var $weekTitleCell=$('<div class="weekTitleCell">'+this.days[i]+'</div>')
-                this.$weekTitle.append($weekTitleCell);
-                if(i==0||i==6)
-                {
-                    $weekTitleCell.addClass("weekends");
-                }
-            }
 
 
             var monDays=this.months[mon];
