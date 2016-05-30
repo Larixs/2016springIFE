@@ -4,25 +4,43 @@
 }
 .cal{
     position: relative;
-    height:auto;
-    width:auto;
-    border: 1px solid black;
+    width: 280px;
+    border: 1px solid #b7b7b7;
+    box-shadow: 1px 1px #9a9a9a;
+}
+.calTitle{
+    background-color: #d91515;
+    height:30px;
+    line-height: 30px;
+    color:#fff;
+    text-align: center;
+}
+.calBody{
+    position: relative;
+
+}
+.calCell,.weekTitleCell{
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    line-height: 40px;
+    color: #3c3c3c;
+    margin: 0;
 }
 .calCell{
-    height: 20px;
-    width: 20px;
+    cursor: pointer;
+}
+
+.mouseOver{
+    background-color: #ffadc2;
 }
 
 .weekends{
-    color:;
+    color: #ff5b6b;
 }
 
-.avaCell{
-    color:;
-}
-.nAvaCell{
-    color: !important;
-}
-.selectCell{
-    background
+
+.selectedCell{
+    background-color:#d91515;
+    color: #fff;
 }
