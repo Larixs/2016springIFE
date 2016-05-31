@@ -105,6 +105,7 @@
             }
             for(i=1;i<=monDays;i++){
                 var $cell=$('<div class="calCell">'+i+'</div>');
+                //用事件代理会优化性能?
                 $cell.hover(function () {
                     $(this).toggleClass("mouseOver");
                 },function () {
@@ -151,4 +152,13 @@
 
 
 })();
+
+
+function handleResponse(response) {
+    alert("you are at IP address " + response.ip + ",which is in" + response.city
+    + "," + response.region_name);
+}
+var script = document.createElement("script");
+script.src="http://freegeoip.net/json/?callback=handleResponse";
+document.body.insertBefore(script,document.body.firstChild);
 
