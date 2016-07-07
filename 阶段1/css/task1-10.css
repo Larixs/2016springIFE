@@ -1,0 +1,64 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+div{
+    box-sizing: border-box;
+}
+.container{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    border:1px solid black;
+}
+.item1,.item2,.item3{
+    border:1px solid red;
+}
+.item4 {
+    border:1px solid blue;
+}
+.item{
+    width: 150px;
+    margin:auto;
+    padding: 20px;;
+}
+.item1{
+    height: 120px;
+}
+.item2{
+    height:100px;
+}
+.item3{
+    height: 40px;
+}
+.item4{
+    height: 200px;
+}
+
+@media all and (max-width: 640px){
+    .item4{
+        -webkit-order: -1;
+        -ms-flex-order: -1;
+        order: -1;
+    }
+    .item{
+
+        margin:0 auto 10px 0;/* 左右居中,上下随align-items*/
+        /*
+        * 上下(或者左右)中,只要有一个auto,那么垂直(水平)方向居中。
+        * 如果两个都不是auto,那么遵循align-items的方向。
+        * 此例中,上下均不为auto,因此遵循align-items的方向,上对齐。
+        * 左为0,右为auto,因此将item右边区域平均分配,左边为0。
+        * 可在浏览器里查看左右边距以得证。
+        */
+    }
+    .container{
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+}
