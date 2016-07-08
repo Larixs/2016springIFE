@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff663ed6-a55e-4239-a364-d1bc1a21f60b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-    </list>
+    <list default="true" id="ff663ed6-a55e-4239-a364-d1bc1a21f60b" name="Default" comment="" />
     <ignored path="2016springIFE.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,21 +21,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="task1-10.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/阶段1/task1-10.html">
+      <file leaf-file-name="task1-12.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/阶段1/task1-12.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="222">
+              <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task1-10.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/阶段1/css/task1-10.css">
+      <file leaf-file-name="task1-12.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/阶段1/css/task1-12.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+            <state relative-caret-position="252">
+              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,6 +64,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/阶段1/task1-10.html" />
         <option value="$PROJECT_DIR$/阶段1/css/task1-10.css" />
+        <option value="$PROJECT_DIR$/阶段1/task1-12.html" />
+        <option value="$PROJECT_DIR$/阶段1/css/task1-12.css" />
       </list>
     </option>
   </component>
@@ -77,7 +76,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="602" />
+    <option name="x" value="663" />
     <option name="y" value="61" />
     <option name="width" value="741" />
     <option name="height" value="615" />
@@ -222,8 +221,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.task1-10.html">
+  <component name="RunManager" selected="JavaScript Debug.task1-12.html">
     <configuration default="false" name="task1-10.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/2016springIFE/阶段1/task1-10.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="task1-12.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/2016springIFE/阶段1/task1-12.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -279,12 +281,14 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.task1-10.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task1-12.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.task1-10.html" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.task1-12.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task1-10.html" />
       </list>
     </recent_temporary>
   </component>
@@ -300,15 +304,15 @@
       <updated>1464337009500</updated>
       <workItem from="1464337011384" duration="17571000" />
       <workItem from="1464588446658" duration="15261000" />
-      <workItem from="1467872615410" duration="4227000" />
+      <workItem from="1467872615410" duration="8654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37059000" />
+    <option name="totallyTimeSpent" value="41486000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="602" y="61" width="741" height="615" extended-state="0" />
+    <frame x="663" y="61" width="741" height="615" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -466,8 +470,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/阶段1/css/task1-10.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="53" column="10" selection-start-line="53" selection-start-column="10" selection-end-line="53" selection-end-column="10" />
+        <state relative-caret-position="237">
+          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/阶段1/task1-12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="79" column="27" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/阶段1/css/task1-12.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
