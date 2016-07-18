@@ -1,0 +1,34 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+div{
+    border: 1px solid black;
+    background-color: white;
+}
+.t1,.t2,.t3{
+    display: flex;
+}
+.t2,.t3,.t4{
+    margin:auto;
+}
+.t1{
+    height: 150px;
+    width: 50%;
+}
+.t2{
+    height: 80%;
+    width: 40%;
+}
+.t3{
+    height: 80%;
+    width: 40%;
+}
+.t4{
+    height: 80%;
+    width: 40%;
+}
+.show{
+    background-color: blue;
+}
