@@ -1,0 +1,56 @@
+.main{
+    position: relative;
+    width: auto;
+    padding-left: 30px;
+    min-width: 400px;
+}
+.main .row div{
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    float:left;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #8d8d8d;
+}
+li{
+    display: block;
+    height: 30px;
+    counter-increment: row;
+}
+li::before{
+    content:counter(row);
+    position: absolute;
+    left: 0px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+}
+#cube{
+    box-sizing: border-box;
+    position: absolute;
+    top:0;
+    left:30px;
+    width: 30px;
+    height: 30px;
+    background-color: #8d8d8d;
+    border-right: 6px solid #3c3c3c;
+    transition: top 0.3s ,left 0.3s;
+    /*animation: rotate 1s;*/
+}
+
+
+@keyframes rotate-right {
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(90deg)}
+}
+
+@keyframes rotate-left {
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(-90deg)}
+}
+@keyframes rotate-back {
+    0%{-webkit-transform: rotate(0deg);}
+    100%{-webkit-transform: rotate(180deg)}
+}
